@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/background"
+    tools:context="com.gilbertopapa.shareimage.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/iv_register"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:srcCompat="@drawable/ic_person_add"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/edt_nameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_register"
+            android:background="@drawable/background_textbox"
+            android:padding="10dp"
+            android:layout_marginTop="59dp"
+            android:ems="10"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:hint="Digite seu usuário."
+            android:inputType="textPersonName"
+            android:layout_alignParentStart="true" />
+
+
+
+        <EditText
+            android:id="@+id/edt_emailRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edt_nameRegister"
+            android:background="@drawable/background_textbox"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:hint="Digite seu email."
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edt_passwordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edt_emailRegister"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:hint="Digite sua senha."
+            android:background="@drawable/background_textbox"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_passwordRegister"
+            android:background="@drawable/background_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:textColor="@android:color/white"
+            android:text="Cadastre-se" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
